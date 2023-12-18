@@ -3,8 +3,8 @@ import ParticlesContainer from "@/components/ParticlesContainer";
 import ProjectsBtn from "@/components/ProjectsBtn";
 import Avatar from "@/components/Avatar";
 
-import { motion } from 'framer-motion';
-import { fadeIn } from './variants'
+import { motion } from "framer-motion";
+import { fadeIn } from "./variants"
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
 
           {/* title */}
           <motion.h1
-            variants={fadeIn('down', 0.2)}
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -27,18 +27,18 @@ const Home = () => {
 
           {/* subtitle */}
           <motion.p
-            variants={fadeIn('down', 0.3)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-s, xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">Hi, I'm Zeeshan Ahmed
+            className="max-w-s, xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">Hi, I"m Zeeshan Ahmed
             A Front-End Web Developer
-            I’m focused on building responsive front-end web applications integrating back-end technologies.
+            I"m focused on building responsive front-end web applications integrating back-end technologies.
           </motion.p>
 
           {/* btn */}
           <motion.div
-            variants={fadeIn('down', 0.3)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -46,7 +46,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
 
-          <motion.div variants={fadeIn('down', 0.4)} initial="hidden" animate="show" exit="hidden"
+          <motion.div variants={fadeIn("down", 0.4)} initial="hidden" animate="show" exit="hidden"
             className="hidden xl:flex">
             <ProjectsBtn />
           </motion.div>
@@ -64,11 +64,11 @@ const Home = () => {
 
         {/* avatar img */}
         <motion.div
-          variants={fadeIn('up', 0.5)}
+          variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          transition={{ duration: 1, ease: 'easeInOut' }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full max-w-[637px] max-h-[578px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]">
           <Avatar />
         </motion.div>
