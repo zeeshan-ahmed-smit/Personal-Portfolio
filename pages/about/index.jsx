@@ -1,4 +1,4 @@
-import Ract, { useState } from 'react'
+import React, { useState } from 'react'
 
 // icons
 import {
@@ -6,18 +6,18 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaBootstrap ,
-  FaNodeJs ,
-  FaGitAlt ,
+  FaBootstrap,
+  FaNodeJs,
+  FaGitAlt,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFirebase ,
+  SiFirebase,
   SiFramer,
-  SiTailwindcss ,
-  SiMongodb ,
-  SiExpress ,
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
 } from "react-icons/si";
 
 import Avatar from '@/components/Avatar';
@@ -35,19 +35,19 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiTailwindcss  />,
-          <FaBootstrap/>,
-          <SiFirebase/>,
-          <FaNodeJs/>,
-          <SiExpress />,
-          <SiMongodb/>,
-          <FaGitAlt/>,
-          <SiFramer />,
+          { name: "html", icon: < FaHtml5 /> },
+          { name: "css", icon: < FaCss3 /> },
+          { name: "javascript", icon: < FaJs /> },
+          { name: "react", icon: < FaReact /> },
+          { name: "next.js", icon: < SiNextdotjs /> },
+          { name: "tailwind", icon: < SiTailwindcss /> },
+          { name: "Bootstrap", icon: < FaBootstrap /> },
+          { name: "firebase", icon: < SiFirebase /> },
+          { name: "node.js", icon: < FaNodeJs /> },
+          { name: "express.js", icon: < SiExpress /> },
+          { name: "mongodb", icon: < SiMongodb /> },
+          { name: "git", icon: < FaGitAlt /> },
+          { name: "framer", icon: < SiFramer /> },
         ],
       },
     ],
@@ -56,12 +56,8 @@ const aboutData = [
     title: 'awards',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Saylani Devathon Summit 1.0',
+        stage: 'Nov-4-2023',
       },
     ],
   },
@@ -69,16 +65,8 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
-      },
-      {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Web Developer Intern - Saylani Mass IT Training',
+        stage: '2022 - 2023',
       },
     ],
   },
@@ -86,16 +74,13 @@ const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Intermediate in CS - Govt. Dehli College Karachi, Pakistan - 2023',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Web Development - Saylani Mass IT Training Institute Karachi, Pakistan - 2023',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Certified javascript Developer - Saylani Mass IT Training Institute Karachi, Pakistan - 2023',
       },
     ],
   },
@@ -135,7 +120,7 @@ const About = () => {
             animate='show'
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0 px-2'>
-            10 years ago, I began freelancing as a developer. Since then, I've
+            2 years ago, I began freelancing as a developer. Since then, I've
             done remote work for agencies, consulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
@@ -151,28 +136,28 @@ const About = () => {
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} />+
+                  <CountUp start={0} end={2} duration={5} />+
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
               </div>
               {/* clients */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              {/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} />+
+                  <CountUp start={0} end={null} duration={5} />
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied clients</div>
-              </div>
+              </div> */}
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} />+
+                  <CountUp start={0} end={25} duration={5} />+
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished projects</div>
               </div>
               {/* awards */}
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} />+
+                  <CountUp start={0} end={1} duration={5} />
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Wining awards</div>
               </div>
@@ -199,18 +184,27 @@ const About = () => {
             })}
           </div>
 
-          <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+          <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 py-2 items-center xl:items-start'>
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/90'>
                   {/* title */}
-                  <div className='text-xl mb-2'>{item.title}</div>
-                  <div className='hidden md:flex'>-</div>
-                  <div className='mb-2'>{item.stage}</div>
+                    <div className='xl:text-[1.1rem] mb-2'>{item.title}</div>
+                    <div className='hidden md:flex'>-</div>
                   {/* icons */}
-                  <div className='flex gap-x-4 gap-y-4 flex-wrap'>
-                    {item.icons?.map((icon, index) => {
-                      return <div key={index} className='text-2xl'>{icon}</div>
+                  <div className='xl:px-0 px-6 flex gap-x-4 gap-y-5 flex-wrap '>
+                    {item.icons?.map((item, index) => {
+                      return (
+                        <div key={index} className='relative flex item-center group hover:text-accent transition-all duration-300'>
+                          {/* tooltip */}
+                          <div className='absolute  bottom-8 -right-2 hidden xl:group-hover:flex'>
+                            <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[5px]'>
+                              <div className='text-[12px] leading-none uppercase font-semibold'>{item.name}</div>
+                            </div>
+                          </div>
+                          <div className='text-2xl'>{item.icon}</div>
+                        </div>
+                      )
                     })}
                   </div>
                 </div>

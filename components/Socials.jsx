@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { RiFacebookFill,RiTwitterFill, RiLinkedinFill, RiGithubFill, RiInstagramFill } from 'react-icons/ri'
+import { RiFacebookFill, RiTwitterFill, RiLinkedinFill, RiGithubFill, RiInstagramFill } from 'react-icons/ri'
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-[1.2rem]">
+    <div
+      className="flex items-center gap-x-5 text-[1.2rem]">
       <Link href={''} className="hover:text-accent transition-all duration-300">
         <RiLinkedinFill />
       </Link>
