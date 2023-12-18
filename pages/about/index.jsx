@@ -6,15 +6,18 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+  FaBootstrap ,
+  FaNodeJs ,
+  FaGitAlt ,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
+  SiFirebase ,
   SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiTailwindcss ,
+  SiMongodb ,
+  SiExpress ,
 } from "react-icons/si";
 
 import Avatar from '@/components/Avatar';
@@ -37,13 +40,15 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
+          <SiTailwindcss  />,
+          <FaBootstrap/>,
+          <SiFirebase/>,
+          <FaNodeJs/>,
+          <SiExpress />,
+          <SiMongodb/>,
+          <FaGitAlt/>,
           <SiFramer />,
-          <FaWordpress />,
         ],
-      },
-      {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
     ],
   },
@@ -186,8 +191,8 @@ const About = () => {
             {aboutData.map((item, itemIndex) => {
               return (
                 <div key={itemIndex}
-                  className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}
-                  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white
+                  className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-[#f13024] after:transition-all after:duration-300'}
+                  cursor-pointer capitalize xl:text-2xl relative after:w-8 after:h-[2px] after:bg-white after:transition-all after:duration-300
                   after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}>{item.title}</div>
               )
@@ -199,13 +204,13 @@ const About = () => {
               return (
                 <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/90'>
                   {/* title */}
-                  <div>{item.title}</div>
+                  <div className='text-xl mb-2'>{item.title}</div>
                   <div className='hidden md:flex'>-</div>
-                  <div>{item.stage}</div>
+                  <div className='mb-2'>{item.stage}</div>
                   {/* icons */}
-                  <div className='flex gap-x-4'>
+                  <div className='flex gap-x-4 gap-y-4 flex-wrap'>
                     {item.icons?.map((icon, index) => {
-                      return <div className='text-2xl '>{icon}</div>
+                      return <div key={index} className='text-2xl'>{icon}</div>
                     })}
                   </div>
                 </div>
