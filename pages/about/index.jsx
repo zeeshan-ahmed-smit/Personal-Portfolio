@@ -24,7 +24,7 @@ import Avatar from "@/components/Avatar";
 import Circles from "@/components/Circles";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import fadeIn  from "../variants.js";
 
 
 //  data
