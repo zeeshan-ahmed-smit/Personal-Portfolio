@@ -36,8 +36,8 @@ const Nav = () => {
 
   return (
     <nav className='flex flex-col gap-y-4 items-center 
-    // xl:justify-center fixed h-max bottom-0 mt-auto xl:right-[2%] 
-    top-0 w-full xl:w-16 xl:max-w-md xl:h-screen z-50'>
+    xl:justify-center fixed h-max bottom-0 mt-auto xl:right-[2%] 
+     w-full xl:w-16 xl:max-w-md xl:h-screen z-50'>
       {/* inner */}
       <div className='flex w-full xl:flex-col items-center justify-between 
       xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 
