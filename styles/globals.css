@@ -20,11 +20,11 @@
 
 @layer base {
   body {
-    @apply  w-full h-screen leading-relaxed;
+    @apply  w-full bg-secondary h-auto leading-relaxed overflow-x-hidden;
   }
 
   .page {
-    @apply w-full h-screen overflow-x-hidden;
+    @apply w-full h-auto ;
   }
 
   .h1 {

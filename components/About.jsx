@@ -20,11 +20,11 @@ import {
   SiExpress,
 } from "react-icons/si";
 
-import Avatar from "@/components/Avatar";
-import Circles from "@/components/Circles";
+// import Circles from "@/components/Circles";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import fadeIn  from "../../variants";
+import fadeIn from "../variants";
+import Image from "next/image";
 
 
 //  data
@@ -74,13 +74,16 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Intermediate in CS - Govt. Dehli College Karachi, Pakistan - 2023",
+        title: "Intermediate in CS - Govt. Dehli College Karachi, Pakistan",
+        stage: "2022",
       },
       {
-        title: "Web Development - Saylani Mass IT Training Institute Karachi, Pakistan - 2023",
+        title: "Web Development - Saylani Mass IT Training Institute Karachi, Pakistan",
+        stage: "2023",
       },
       {
-        title: "Certified javascript Developer - Saylani Mass IT Training Institute Karachi, Pakistan - 2023",
+        title: "Certified javascript Developer - Saylani Mass IT Training Institute Karachi, Pakistan",
+        stage: "2023",
       },
     ],
   },
@@ -90,19 +93,12 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-screen py-[5rem]  text-center xl:text-left">
-      <Circles />
+    <div className="h-auto text-center xl:text-left relative">
+      <div className="w-[200px] xl:w-[300px] absolute -right-16 -bottom-2 mix-blend-color-dodge animate-pulse duration-75 z-10">
+        <Image src={'/circles.png'} width={260} height={200} alt="" className="w-full h-full" />
+      </div>
 
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[320px]">
-        <Avatar />
-      </motion.div>
-
-      <div className="container mx-auto h-screen flex flex-col items-center xl:flex-row gap-x-6 ">
+      <div className="container mx-auto h-screen flex flex-col items-center xl:flex-row gap-x-6 mt-10 md:mt-0">
         {/* text */}
         <div className="flex-1  flex flex-col justify-center  xs:mt-[3.5rem]">
           <motion.h2
@@ -119,10 +115,8 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0 px-2">
-            2 years ago, I began freelancing as a developer. Since then, I"ve
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            className="max-w-[500px] text-[14px] mx-auto xl:mx-0 mb-2 mt-2 xl:mb-12 xl:px-0 px-2">Dedicated Front End Developer with 2+ year of experience.
+            Proficient in crafting responsive layouts, implementing UI/UX designs, and applying best web development practices. Demonstrated ability to work with diverse technologies and frameworks. Adaptable and driven, excelling in dynamic, fast-paced environments. .
           </motion.p>
 
           {/* counter */}
@@ -171,7 +165,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[380px]">
+          className="flex flex-col w-full xl:max-w-[48%] h-[380px] lg:-mt-8">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -189,8 +183,9 @@ const About = () => {
               return (
                 <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/90">
                   {/* title */}
-                    <div className="xl:text-[1.1rem] mb-2">{item.title}</div>
-                    <div className="hidden md:flex">-</div>
+                  <div className="xl:text-[1.1rem]">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div>{item.stage}</div>
                   {/* icons */}
                   <div className="xl:px-0 px-6 flex gap-x-4 gap-y-5 flex-wrap ">
                     {item.icons?.map((item, index) => {
