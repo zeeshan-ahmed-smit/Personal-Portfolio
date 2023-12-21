@@ -24,7 +24,7 @@
   }
 
   .page {
-    @apply w-full h-auto ;
+    @apply w-full h-auto overflow-x-hidden;
   }
 
   .h1 {
