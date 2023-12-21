@@ -94,7 +94,8 @@ const About = () => {
 
   return (
     <div className="h-auto text-center xl:text-left relative">
-      <div className="w-[200px] xl:w-[300px] absolute -right-16 -bottom-2 mix-blend-color-dodge animate-pulse duration-75 z-10">
+      {/* circle */}
+      <div className="w-[200px] xl:w-[300px] absolute -right-16 -bottom-2 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">
         <Image src={'/circles.png'} width={260} height={200} alt="" className="w-full h-full" />
       </div>
 
