@@ -35,18 +35,8 @@ const Home = () => {
             I"m focused on building responsive front-end web applications integrating back-end technologies.
           </motion.p>
 
-          {/* btn */}
-          <motion.div
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </motion.div>
-
           <motion.div variants={fadeIn("down", 0.4)} initial="hidden" animate="show" exit="hidden"
-            className="hidden xl:flex">
+            className="flex justify-center xl:justify-normal">
             <ProjectsBtn />
           </motion.div>
         </div>

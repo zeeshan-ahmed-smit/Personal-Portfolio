@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <AnimatePresence mode='wait'>
-        <motion.dev key={router.route} className='h-full'>
+        <motion.dev className='h-full'>
           <Transition />
           <Component {...pageProps} />
         </motion.dev>
