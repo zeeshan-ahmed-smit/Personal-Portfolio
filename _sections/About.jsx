@@ -103,7 +103,7 @@ const About = () => {
         {/* text */}
         <div className="flex-1  flex flex-col justify-center  xs:mt-[3.5rem]">
           <motion.h2
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -184,7 +184,7 @@ const About = () => {
               return (
                 <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/90">
                   {/* title */}
-                  <div className="xl:text-[1.1rem]">{item.title}</div>
+                  <div className="xl:text-[1.1rem] mb-2">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   {/* icons */}

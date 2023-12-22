@@ -12,8 +12,8 @@ const Services = () => {
             <h2 className="h2">
               My Services <span className="text-accent">.</span>
             </h2>
-            <p className="mb-4 max-w-[400px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic explicabo? Laudantium,
-              itaque? Temporibus, non. Sequi nesciunt earum rerum ea autem eius quos? Neque nihil qui assumenda sint,
+            <p className="mb-4 max-w-[400px] mx-auto lg:mx-0">Crafting the future of digital experiences, we specialize in web and app development that seamlessly blends creativity and functionality, 
+            delivering cutting-edge solutions that captivate users and drive results. Your vision, our expertise, let's build something extraordinary together.
               </p>
           </div>
           <div className="w-full xl:max-w-[65%]">
