@@ -19,7 +19,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1  mt-[5rem] xl:mt-0">
+            className="h1  mt-[8rem] xl:mt-0">
             TransForming Ideas <br />
             Into <span className="text-accent">Digital Reality</span>
           </motion.h1>

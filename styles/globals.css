@@ -20,7 +20,7 @@
 
 @layer base {
   body {
-    @apply scrollbar scrollbar-thumb-gray-900 scrollbar-track-transparent w-full bg-[#1e163e] h-auto leading-relaxed overflow-x-hidden;
+    @apply scroll-smooth scroll-m-0 scrollbar scrollbar-thumb-gray-900 scrollbar-track-transparent w-full bg-[#1e163e] h-auto leading-relaxed overflow-x-hidden;
   }
 
   .page {
