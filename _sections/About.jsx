@@ -95,11 +95,11 @@ const About = () => {
   return (
     <div id="about" className="h-screen text-center xl:text-left relative">
       {/* circle */}
-      <div className="w-[200px] xl:w-[300px] absolute -right-16 -bottom-2 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">
+      <div className="w-[200px] xl:w-[300px] absolute -right-16 bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">
         <Image src={'/circles.png'} width={260} height={200} alt="" className="w-full h-full" />
       </div>
 
-      <div className="container mx-auto h-screen flex flex-col items-center xl:flex-row gap-x-6 mt-10 md:mt-0">
+      <div className="container mx-auto flex flex-col items-center justify-center xl:flex-row gap-x-6 pt-16 md:mt-0 md:pt-0">
         {/* text */}
         <div className="flex-1  flex flex-col justify-center  xs:mt-[3.5rem]">
           <motion.h2
@@ -166,7 +166,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[380px] lg:-mt-8">
+          className="flex flex-col w-full xl:max-w-[48%] h-[380px]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (

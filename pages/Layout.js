@@ -1,6 +1,6 @@
-import Header from '@/components/Header';
-import Nav from '@/components/Nav';
-import TopLeftImg from '@/components/TopLeftImg';
+import Header from '@/_components/Header';
+import Nav from '@/_components/Nav';
+import TopLeftImg from '@/_components/TopLeftImg';
 import { Lobster,Sora } from 'next/font/google'
 
 const sora = Sora({

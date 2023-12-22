@@ -47,7 +47,7 @@ const ParticlesContainer = () => {
             },
             modes: {
               push: {
-                quantity: 90,
+                quantity: 130,
               },
               repulse: {
                 distance: 50,
@@ -76,7 +76,7 @@ const ParticlesContainer = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 2,
+              speed: 1,
               straight: false,
             },
             number: {

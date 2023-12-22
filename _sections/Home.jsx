@@ -1,13 +1,15 @@
 
-import ParticlesContainer from "@/components/ParticlesContainer";
-import ProjectsBtn from "@/components/ProjectsBtn";
+import ParticlesContainer from "@/_components/ParticlesContainer";
+import ProjectsBtn from "@/_components/ProjectsBtn";
 
 import { motion } from "framer-motion";
 import fadeIn from "../variants"
+import Header from "@/_components/Header";
+import TopLeftImg from "@/_components/TopLeftImg";
 
 const Home = () => {
   return (
-    <div className="h-screen pt-[3rem] relative">
+    <div id="home" className="h-screen bg-primary/30 pt-[3rem] relative">
 
       {/* text */}
       <div className="w-full h-full">

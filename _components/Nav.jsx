@@ -14,7 +14,7 @@ import { useRouter } from 'next/router';
 
 // nav data
 export const navData = [
-  { name: 'home', path: '/', icon: <HiHome /> },
+  { name: 'home', path: '/#home', icon: <HiHome /> },
   { name: 'about', path: '/#about', icon: <HiUser /> },
   { name: 'services', path: '/#services', icon: <HiRectangleGroup /> },
   { name: 'work', path: '/#work', icon: <HiViewColumns /> },
@@ -47,7 +47,7 @@ const Nav = () => {
           return <Link
             href={link.path}
             key={index}
-            className={`${link.path === pathName && 'text-accent'} relative flex item-center group hover:text-accent transition-all duration-300`}>
+            className="relative flex item-center group hover:text-accent transition-all duration-300">
             {/* tooltip */}
             <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
               <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[5px]'>

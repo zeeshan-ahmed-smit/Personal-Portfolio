@@ -1,5 +1,6 @@
-import About from '@/components/About'
-import Home from '@/components/Home'
+import About from '@/_sections/About'
+import Home from '@/_sections/Home'
+import Services from '@/_sections/Services'
 import React from 'react'
 
 const index = () => {
@@ -7,6 +8,7 @@ const index = () => {
     <>
     <Home/>
     <About/>
+    <Services/>
     </>
   )
 }
