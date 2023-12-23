@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 
 // icons
 import {
@@ -20,11 +20,11 @@ import {
   SiExpress,
 } from "react-icons/si";
 
-// import Circles from "@/components/Circles";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import fadeIn from "../variants";
 import Image from "next/image";
+
 
 
 //  data
@@ -93,7 +93,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div id="about" className="h-screen text-center xl:text-left relative">
+    <div id="about" className="h-auto py-5 text-center xl:text-left relative">
       {/* circle */}
       <div className="w-[200px] xl:w-[300px] absolute -right-16 bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">
         <Image src={'/circles.png'} width={260} height={200} alt="" className="w-full h-full" />

@@ -3,7 +3,7 @@ import Bulb from "@/_components/Bulb";
 
 const Services = () => {
   return (
-    <div id="services" className="h-screen bg-primary/30 flex items-center">
+    <div id="services" className="h-auto py-32 bg-primary/30 flex items-center">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-14">
           {/* text */}
