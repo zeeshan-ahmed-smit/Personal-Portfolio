@@ -20,7 +20,7 @@
 
 @layer base {
   body {
-    @apply scroll-smooth  scrollbar-none w-full bg-[#1e163e] h-auto leading-relaxed overflow-x-hidden;
+    @apply scroll-smooth  scrollbar-none w-full bg-[#1e163e] h-screen leading-relaxed overflow-x-hidden;
   }
 
   .page {

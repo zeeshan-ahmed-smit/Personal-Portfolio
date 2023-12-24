@@ -1,4 +1,9 @@
-import React, { useState,useEffect } from "react"
+import React, { useState, useEffect } from "react"
+
+import CountUp from "react-countup";
+import { motion } from "framer-motion";
+import fadeIn from "../variants";
+import Image from "next/image";
 
 // icons
 import {
@@ -14,16 +19,11 @@ import {
 import {
   SiNextdotjs,
   SiFirebase,
-  SiFramer,
   SiTailwindcss,
   SiMongodb,
   SiExpress,
 } from "react-icons/si";
 
-import CountUp from "react-countup";
-import { motion } from "framer-motion";
-import fadeIn from "../variants";
-import Image from "next/image";
 
 
 
@@ -47,7 +47,6 @@ const aboutData = [
           { name: "express.js", icon: < SiExpress /> },
           { name: "mongodb", icon: < SiMongodb /> },
           { name: "git", icon: < FaGitAlt /> },
-          { name: "framer", icon: < SiFramer /> },
         ],
       },
     ],
@@ -116,7 +115,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] text-[14px] mx-auto xl:mx-0 mb-2 mt-2 xl:mb-12 xl:px-0 px-2">Dedicated Front End Developer with 2+ year of experience.
+            className="max-w-[500px] text-[14px] mx-auto xl:mx-0 mb-5 mt-2 xl:mb-12 xl:px-0 px-2">Dedicated Front End Developer with 2+ year of experience.
             Proficient in crafting responsive layouts, implementing UI/UX designs, and applying best web development practices. Demonstrated ability to work with diverse technologies and frameworks. Adaptable and driven, excelling in dynamic, fast-paced environments. .
           </motion.p>
 
@@ -135,14 +134,6 @@ const About = () => {
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years of experience</div>
               </div>
-              {/* clients */}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={null} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Satisfied clients</div>
-              </div> */}
-              {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={25} duration={5} />+
@@ -179,26 +170,21 @@ const About = () => {
             })}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4  items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col text-center gap-y-2 xl:gap-y-4  items-center">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
-                <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/90">
+                <div key={itemIndex} className="flex-1  flex flex-col max-w-max gap-x-2 items-center  text-white/90">
                   {/* title */}
-                  <div className="xl:text-[1.1rem] mb-2">{item.title}</div>
+                  <div className="xl:text-[1.1rem] mb-5 lg:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   {/* icons */}
-                  <div className="xl:px-0 px-6 flex gap-x-4 gap-y-5 flex-wrap ">
+                  <div className="xl:px-0 px-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4  gap-x-5 gap-y-2  justify-center">
                     {item.icons?.map((item, index) => {
                       return (
-                        <div key={index} className="relative flex item-center group hover:text-accent transition-all duration-300">
-                          {/* tooltip */}
-                          <div className="absolute  bottom-8 -right-2 hidden xl:group-hover:flex">
-                            <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[5px]">
-                              <div className="text-[12px] leading-none uppercase font-semibold">{item.name}</div>
-                            </div>
-                          </div>
+                        <div key={index} className="w-[130px] p-2 relative flex bg-[rgba(65,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)] item-center justify-between group transition-all duration-100 animate-pulse ">
                           <div className="text-2xl">{item.icon}</div>
+                          <div className="uppercase text-[14px] sm:text-[1rem]">{item.name}</div>
                         </div>
                       )
                     })}
