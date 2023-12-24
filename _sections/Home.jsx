@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-
+// components 
 import ParticlesContainer from "@/_components/ParticlesContainer";
 import ProjectsBtn from "@/_components/ProjectsBtn";
 
@@ -10,7 +9,6 @@ import fadeIn from "../variants"
 
 
 const Home = () => {
-
   
   return (
     <div id="home" className="h-auto bg-primary/30 py-[5rem] lg:py-[2rem]  relative">

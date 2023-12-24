@@ -82,7 +82,7 @@ const ServiceSlider = () => {
               </div>
             </div>
           </SwiperSlide>
-        )
+        );
       })}
     </Swiper>
   )

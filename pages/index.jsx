@@ -1,20 +1,19 @@
-
+// section components
 import About from '@/_sections/About'
 import Home from '@/_sections/Home'
 import Services from '@/_sections/Services'
-import React, { useEffect } from 'react'
+import Work from '@/_sections/Work'
 
 
 
 const index = () => {
-
-
 
   return (
     <>
       <Home />
       <About />
       <Services />
+      <Work/>
     </>
   )
 }
