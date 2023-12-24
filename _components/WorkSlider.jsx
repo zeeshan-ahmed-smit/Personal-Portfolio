@@ -50,6 +50,7 @@ const workSlides = {
 };
 
 
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -81,9 +82,9 @@ const WorkSlider = () => {
                           opacity-0 group-hover:opacity-80 transition-all duration-700 ">
                       </div>
                       {/* title */}
-                      <div className="absolute bottom-0 translate-y-full group-hover:translate-y-10 group-hover:xl:-translate-y-20
+                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-2  group-hover:xl:-translate-y-14
                        transition-all duration-300">
-                        <div className="flex items-center cursor-pointer mb-5  gap-x-2 text-[16px] tracking-[0.2em]">
+                        <div className="flex p-1 mb-3 items-center cursor-pointer  gap-x-2 text-[16px] tracking-[0.2em]">
                           {/* title part 1 */}
                           <div className="delay-100">Live</div>
                           {/* title part 2 */}
@@ -93,7 +94,7 @@ const WorkSlider = () => {
                             <BsArrowRight />
                           </div>
                         </div>
-                        <div className="flex items-center cursor-pointer gap-x-2 text-[16px] tracking-[0.2em]">
+                        <div className="flex  p-1 items-center cursor-pointer gap-x-2 text-[16px] tracking-[0.2em]">
                           {/* title part 1 */}
                           <div className="delay-100">Github</div>
                           {/* title part 2 */}

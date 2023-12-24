@@ -3,8 +3,6 @@ import WorkSlider from "@/_components/WorkSlider";
 
 
 const Work = () => {
-
-
   return (
     <div id="services" className="h-auto py-32 bg-primary/60 flex items-center">
       <div className="container mx-auto">
