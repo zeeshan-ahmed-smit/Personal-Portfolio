@@ -17,10 +17,17 @@
 .swiper-rtl .swiper-button-prev:after {
   color: #f13024;
 }
+body{
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.625;
+  overflow-x: hidden
+}
 
 @layer base {
   body {
-    @apply scroll-smooth  scrollbar-none w-full bg-[#1e163e] h-screen leading-relaxed overflow-x-hidden;
+    @apply scrollbar-none;
   }
 
   .page {

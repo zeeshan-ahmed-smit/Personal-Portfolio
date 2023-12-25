@@ -16,16 +16,12 @@ const ParticlesContainer = () => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
 
   return (
     <>
       {init && <Particles
         id="tsparticles"
         className="w-full h-full absolute top-0 translate-z-0"
-        particlesLoaded={particlesLoaded}
         options={{
           background: {
             color: {
@@ -47,7 +43,7 @@ const ParticlesContainer = () => {
             },
             modes: {
               push: {
-                quantity: 130,
+                quantity: 90,
               },
               repulse: {
                 distance: 50,

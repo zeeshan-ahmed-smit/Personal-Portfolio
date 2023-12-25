@@ -3,9 +3,9 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Contact = () => {
 
-  
+
   return (
-    <div id="contact" className="h-screen bg-primary/70">
+    <div id="contact" className="h-screen pb-10 bg-primary/70">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
@@ -18,7 +18,7 @@ const Contact = () => {
           <form className="flex-1 flex flex-col gap-6 w-full mx-auto">
 
             {/* group */}
-            <div className="flex gap-6 w-full flex-wrap">
+            <div className="flex gap-6 w-full flex-wrap xs:flex-nowrap">
               <input type="text" placeholder="Name" className="input" />
               <input type="email" placeholder="Email" className="input" />
             </div>
