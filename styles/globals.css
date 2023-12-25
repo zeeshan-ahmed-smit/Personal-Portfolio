@@ -24,7 +24,7 @@
   }
 
   .page {
-    @apply w-full h-auto overflow-hidden;
+    @apply w-full scroll-smooth h-auto overflow-hidden;
   }
 
   .h1 {

@@ -18,42 +18,12 @@ const workSlides = {
         },
         {
           title: 'title',
-          path: '/thumb3.png',
+          path: '/thumb8.png',
         },
         {
           title: 'title',
           path: '/thumb6.png',
         },
-      ],
-    },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb8.png',
-        },
-        {
-          title: 'title',
-          path: '/thumb7.png',
-        },
-        {
-          title: 'title',
-          path: '/thumb4.png',
-        },
-        {
-          title: 'title',
-          path: '/thumb5.png',
-        },
-
-      ],
-    },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb9.png',
-        },
-
       ],
     },
   ],
