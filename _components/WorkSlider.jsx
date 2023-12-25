@@ -10,19 +10,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/thumb1.png',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/thumb2.png',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/thumb3.png',
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/thumb6.png',
         },
       ],
     },
@@ -30,20 +30,30 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/thumb8.png',
         },
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/thumb7.png',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/thumb4.png',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/thumb5.png',
         },
+
+      ],
+    },
+    {
+      images: [
+        {
+          title: 'title',
+          path: '/thumb9.png',
+        },
+
       ],
     },
   ],
@@ -62,10 +72,10 @@ import { Navigation, Pagination } from 'swiper/modules'
 const WorkSlider = () => {
   return (
     <Swiper
-      spaceBetween={10}
+      spaceBetween={20}
       pagination={{ clickable: true }}
       modules={[Navigation, Pagination]}
-      className="h-[240px] sm:h-[480px]"
+      className="h-[300px] sm:h-[480px]"
     >
       {workSlides.slides.map((slide, index) => {
         return (
