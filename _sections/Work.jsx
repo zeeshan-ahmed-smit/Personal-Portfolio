@@ -4,7 +4,7 @@ import WorkSlider from "@/_components/WorkSlider";
 
 const Work = () => {
   return (
-    <div id="services" className="h-auto py-32 bg-primary/60 flex items-center">
+    <div id="work" className="h-auto py-32 bg-primary/60 flex items-center">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-14">
           {/* text */}
