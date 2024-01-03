@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // icon
 import { BsArrowRight } from 'react-icons/bs'
@@ -10,18 +11,26 @@ const workSlides = {
     {
       title: 'title',
       path: '/thumb1.png',
+      githubUrl: 'https://github.com/zeeshan-ahmed-smit/Movies-website-using-react.js.git',
+      liveUrl: 'https://themovix.surge.sh/',
     },
     {
       title: 'title',
       path: '/thumb2.png',
+      githubUrl: 'https://github.com/zeeshan-ahmed-smit/barber-website-landing-page.git',
+      liveUrl: 'https://zeeshan-barber.netlify.app/',
     },
     {
       title: 'title',
       path: '/thumb8.png',
+      githubUrl: 'https://github.com/zeeshan-ahmed-smit/Developer-Portfolio-Nextjs.git',
+      liveUrl: 'https://zeeshanafridi.vercel.app',
     },
     {
       title: 'title',
       path: '/thumb6.png',
+      githubUrl: 'https://github.com/zeeshan-ahmed-smit/Developer-PortFolio_HTML_CSS_JS',
+      liveUrl: 'https://developer-prtfolio-2023.netlify.app',
     },
   ],
 };
@@ -45,7 +54,7 @@ const WorkSlider = () => {
                     {/* title */}
                     <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-20 sm:group-hover:-translate-y-10  group-hover:xl:-translate-y-14
                        transition-all duration-300">
-                      <div className="flex p-1 mb-3 items-center cursor-pointer  gap-x-2 text-[16px] tracking-[0.2em]">
+                      <Link href={image.liveUrl}  className="flex p-1 mb-3 items-center cursor-pointer  gap-x-2 text-[16px] tracking-[0.2em]">
                         {/* title part 1 */}
                         <div className="delay-100">Live</div>
                         {/* title part 2 */}
@@ -54,8 +63,8 @@ const WorkSlider = () => {
                         <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
                           <BsArrowRight />
                         </div>
-                      </div>
-                      <div className="flex  p-1 items-center cursor-pointer gap-x-2 text-[16px] tracking-[0.2em]">
+                      </Link>
+                      <Link href={image.githubUrl} className="flex  p-1 items-center cursor-pointer gap-x-2 text-[16px] tracking-[0.2em]">
                         {/* title part 1 */}
                         <div className="delay-100">Github</div>
                         {/* title part 2 */}
@@ -64,7 +73,7 @@ const WorkSlider = () => {
                         <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
                           <BsArrowRight />
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>

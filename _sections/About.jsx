@@ -92,7 +92,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div id="about" className="h-auto py-5 text-center xl:text-left relative">
+    <div id="about" className=" py-5 text-center xl:text-left relative">
 
       {/* circle */}
       <div className="w-[200px] xl:w-[300px] absolute -right-16 bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">
@@ -108,7 +108,7 @@ const About = () => {
           </h2>
 
           <p
-            className="max-w-[500px] text-[14px] mx-auto xl:mx-0 mb-5 mt-2 xl:mb-12 xl:px-0 px-2">Dedicated Front End Developer with 2+ year of experience.
+            className="max-w-[500px] text-[14px] mx-auto xl:mx-0 mb-5 mt-2 xl:mb-12 xl:px-0 px-2">Dedicated Front End Developer with 1+ year of experience.
             Proficient in crafting responsive layouts, implementing UI/UX designs, and applying best web development practices. Demonstrated ability to work with diverse technologies and frameworks. Adaptable and driven, excelling in dynamic, fast-paced environments. .
           </p>
 

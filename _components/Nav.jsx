@@ -9,7 +9,7 @@ import {
 } from 'react-icons/hi2';
 
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 
 // nav data
@@ -26,8 +26,8 @@ export const navData = [
 ];
 
 const Nav = () => {
-  const router = useRouter();
-  const pathName = router.pathname;
+  // const router = useRouter();
+  // const pathName = router.pathname;
 
   return (
     <nav className='flex flex-col gap-y-4 items-center 
