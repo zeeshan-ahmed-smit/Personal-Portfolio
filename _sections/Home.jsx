@@ -9,7 +9,7 @@ import fadeIn from "../utils/variants"
 
 
 const Home = () => {
-  
+
   return (
     <div id="home" className="h-auto bg-primary/30 py-[5rem] lg:py-[2rem]  relative">
       {/* text */}
@@ -42,6 +42,7 @@ const Home = () => {
             className="flex justify-center xl:justify-normal">
             <ProjectsBtn />
           </motion.div>
+
         </div>
       </div>
 
@@ -53,7 +54,9 @@ const Home = () => {
 
         {/* particles */}
         <ParticlesContainer />
+
       </div>
+
     </div>
   )
 };
