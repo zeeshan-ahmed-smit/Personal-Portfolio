@@ -162,9 +162,9 @@ const About = () => {
               return (
                 <div key={itemIndex} className="flex-1  flex flex-col max-w-max gap-x-2 items-center  text-white/90">
                   {/* title */}
-                  <div className="xl:text-[1.1rem] mb-5 lg:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="xl:text-[1.1rem] mb-1 lg:mb-0">{item.title}</div>
+                  <div className="hidden  md:flex">-</div>
+                  <div className="mb-2 lg-mb-0">{item.stage}</div>
                   {/* icons */}
                   <div className="xl:px-0 px-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4  gap-x-5 gap-y-2  justify-center">
                     {item.icons?.map((item, index) => {
