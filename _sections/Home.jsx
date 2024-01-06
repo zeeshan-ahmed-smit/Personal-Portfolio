@@ -3,7 +3,7 @@ import ParticlesContainer from "@/_components/ParticlesContainer";
 import ProjectsBtn from "@/_components/ProjectsBtn";
 
 import { motion } from "framer-motion";
-import fadeIn from "../variants"
+import fadeIn from "../utils/variants"
 
 
 
