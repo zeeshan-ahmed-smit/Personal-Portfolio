@@ -92,7 +92,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div id="about" className=" py-5 text-center xl:text-left relative">
+    <div id="about" className=" py-8 text-center xl:text-left relative">
 
       {/* circle */}
       <div className="w-[200px] xl:w-[300px] absolute -right-16 bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">
@@ -169,7 +169,7 @@ const About = () => {
                   <div className="xl:px-0 px-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4  gap-x-5 gap-y-2  justify-center">
                     {item.icons?.map((item, index) => {
                       return (
-                        <div key={index} className="w-[130px] p-2 relative flex bg-[rgba(65,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)] item-center justify-between group transition-all duration-100 animate-pulse ">
+                        <div key={index} className="w-[130px] p-2 relative flex bg-[rgba(65,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)] item-center justify-between group transition-all duration-100 ">
                           <div className="text-2xl">{item.icon}</div>
                           <div className="uppercase text-[14px] sm:text-[1rem]">{item.name}</div>
                         </div>

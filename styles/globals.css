@@ -27,11 +27,11 @@ body{
 
 @layer base {
   body {
-    @apply scrollbar-none;
+    @apply scrollbar-none w-full h-screen leading-3 overflow-x-hidden scroll-smooth;
   }
 
   .page {
-    @apply w-full scroll-smooth h-auto overflow-hidden;
+    @apply w-full overflow-hidden;
   }
 
   .h1 {
