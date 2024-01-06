@@ -157,14 +157,14 @@ const About = () => {
             })}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col text-center gap-y-2 xl:gap-y-4  items-center">
+          <div className="py-2 xl:py-6 flex flex-col leading-6 text-center gap-y-2 xl:gap-y-4  items-center">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div key={itemIndex} className="flex-1  flex flex-col max-w-max gap-x-2 items-center  text-white/90">
                   {/* title */}
                   <div className="xl:text-[1.1rem] mb-1 lg:mb-0">{item.title}</div>
                   <div className="hidden  md:flex">-</div>
-                  <div className="mb-2 lg-mb-0">{item.stage}</div>
+                  <div className="mb-3 lg-mb-0">{item.stage}</div>
                   {/* icons */}
                   <div className="xl:px-0 px-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4  gap-x-5 gap-y-2  justify-center">
                     {item.icons?.map((item, index) => {
