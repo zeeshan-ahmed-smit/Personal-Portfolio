@@ -21,7 +21,7 @@
 
 @layer base {
   body {
-    @apply scrollbar-none w-full h-screen leading-3 overflow-hidden overflow-y-scroll scroll-smooth;
+    @apply scrollbar-none w-full h-screen leading-3 overflow-x-hidden scroll-smooth;
   }
 
   .h1 {
