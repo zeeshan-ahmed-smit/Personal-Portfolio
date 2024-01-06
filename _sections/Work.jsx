@@ -1,10 +1,15 @@
 // components
 import WorkSlider from "@/_components/WorkSlider";
+import Image from "next/image";
 
 
 const Work = () => {
   return (
-    <div id="work" className="h-auto py-32 bg-primary/40 flex items-center">
+    <div id="work" className="relative h-auto py-32 bg-primary/40 flex items-center">
+      {/* circle */}
+      <div className="w-[200px] xl:w-[300px] absolute -right-16 bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">
+        <Image src={'/circles.png'} width={260} height={200} alt="" className="w-full h-full" />
+      </div>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-14">
           {/* text */}
@@ -14,7 +19,7 @@ const Work = () => {
             </h2>
             <p className="mb-4 max-w-[400px] mx-auto lg:mx-0">
               In my 2 years as a web developer in the software engineering industry, I've honed my skills to seamlessly blend creativity with technical expertise. My work is a testament to a commitment to crafting visually appealing and functional websites.
-             Explore my portfolio to witness the intersection of innovation and proficiency in web development.
+              Explore my portfolio to witness the intersection of innovation and proficiency in web development.
             </p>
           </div>
 
