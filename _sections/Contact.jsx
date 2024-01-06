@@ -6,7 +6,7 @@ const Contact = () => {
 
 
   return (
-    <div id="contact" className="relative h-auto bg-primary/70">
+    <div id="contact" className="relative overflow-hidden h-auto bg-primary/70">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
