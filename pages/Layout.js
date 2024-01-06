@@ -1,6 +1,3 @@
-import Header from '@/_components/Header';
-import Nav from '@/_components/Nav';
-import TopLeftImg from '@/_components/TopLeftImg';
 import { Lobster,Sora } from 'next/font/google'
 
 const sora = Sora({
@@ -17,10 +14,7 @@ const lobster = Lobster({
 
 const Layout = ({ children }) => {
   return (
-    <div className={`page bg-site text-white bg-cover bg-no-repeat fon-sora relative  ${sora.variable} ${lobster.variable} `}>
-      <TopLeftImg />
-      <Nav />
-      <Header />
+    <div className={`  ${sora.variable} ${lobster.variable} `}>
       {children}
     </div>
   )
