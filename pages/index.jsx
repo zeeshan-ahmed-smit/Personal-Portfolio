@@ -13,7 +13,7 @@ import Work from '@/_sections/Work'
 const index = () => {
 
   return (
-    <div className='w-full h-full bg-site text-white bg-cover bg-no-repeat fon-sora relative'>
+    <div className='w-full h-full bg-site text-white bg-cover bg-no-repeat fon-sora overflow-hidden relative'>
       <TopLeftImg />
       <Nav />
       <Header />
